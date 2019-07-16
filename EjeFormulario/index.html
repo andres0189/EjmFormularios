@@ -8,24 +8,25 @@
     
 </head>
 <body>
-    <form action="">
+    <form >
 <fieldset>
     <legend>Titulo del formulario</legend>
-    <label for="nombre">Asunto:</label>
+    <label for="nombre"> * Asunto:</label>
    
     <input type="text"> <br> <br>
-        <label for="nombre">Primer apellido:</label>
-     <input type="text"> <br> <br>
-        <label for="nombre">Segundo apellido:</label>
-     <input type="text"> <br> <br>
+        <label for="segundo apellido">* Primer apellido:</label>
+     <input type="text"required> <br> <br>
+        <label for=" apellido"> * Segundo apellido:</label>
+     <input type="text"required> <br> <br>
         <label for="nombre">nombre:</label>
-       <input type="text"> <br> <br>
-        <label for="nombre">D.N.I/Pasaporte/N.I.E:</label>
-    <input type="text"> <br> <br>
-        <label for="nombre">Correo electronico:</label> 
-    <input type="text"> <br> <br>
-        <label for="nombre">Edad:</label>
-    <input type="text"> <br> <br>
+       <input type="text" required> <br> <br>
+        <label for="D.N.I"> * D.N.I/Pasaporte/N.I.E:</label>
+    <input type="text" placeholder="Identificación">   <br> <br>
+        <label for="Correo">Correo electronico:</label> 
+    <input type="email" placeholder="Usuario@servidor.com"> <br> <br>
+        <label for="Edad
+        ">Edad:</label>
+    <input type="number"> <br> <br>
          <label for="Sobre que">Sobre que?</label> 
     <select name="OS">
         <option value="1">Necesidad</option>
@@ -50,13 +51,42 @@
  <label for="nombre">Texto escrito:</label>
  <br>
  <textarea cols="40" rows="5"></textarea>
+<br>
+ <p>Suscribirse al boleín</p>
+ <input type="radio" name="Boletín" value ="1">Sí
+ <br>
+ <input type="radio" name="Boletín" value ="2">No
+
+
+<p>Tu interés</p>
+<input type="checkbox" name="selección" value="1">Programación en dispositivos móviles
+
+ <br>
+ 
+ <input type="checkbox" name="selección2" value="2" checked>Programar páginas
+ 
+ <br>
+ 
+ <input type="checkbox" name="selección3" value="3"> Testing 
+<br>
+
+<input type="checkbox" name="selección4" value="4"> Ninguna 
+
+<br>
+<p>Seleccione solo una opción.</p>
+
+
+
+
+
+
 
  <br> <br>
  <label for="nombre">Los datos personales facilitados son susceptibles de cesión cuanto ésta sea precisa para tramitar su contestación</label>
  <br> <br>
-<input type="button" value ="enviar">
-
-
+<input type="submit" value ="enviar"> <input type="reset" value ="resetear">
+<p>Click en "enviar" para válidar toda la información</p>
+<p>Click en "resetear" para resetear toda la información</p>
 </fieldset>
 
 
@@ -67,7 +97,7 @@
     <form action="">
         <fieldset>
             <legend>Ejemplos de inputs</legend>
-            <p>Selección de color<br>
+            <p>selección de color<br>
                 <input type="color">
             
             </p> 
